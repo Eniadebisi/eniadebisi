@@ -34,3 +34,8 @@ yarn-error.log*
 # IDE
 .vscode
 .idea
+server/public
+vite.config.ts.*
+*.tar.gz
+.next/
+.env*.local
