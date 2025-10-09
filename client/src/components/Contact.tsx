@@ -5,7 +5,8 @@ import { useState } from "react";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
-  const email = "your.email@example.com";
+  const email = "eniadebisi@gmail.com";
+  const phone = "(202) 751-6267";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -17,13 +18,13 @@ export function Contact() {
     {
       name: "LinkedIn",
       icon: <SiLinkedin className="h-5 w-5" />,
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://linkedin.com/in/enioluwa-adebisi",
       color: "hover:text-[#0077b5]",
     },
     {
       name: "GitHub",
       icon: <SiGithub className="h-5 w-5" />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/eniadebisi",
       color: "hover:text-foreground",
     },
   ];
@@ -43,29 +44,38 @@ export function Contact() {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-card border border-card-border rounded-md p-6 flex items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-muted-foreground" />
-                <span className="font-mono" data-testid="text-email">{email}</span>
+            <div className="space-y-4">
+              <div className="bg-card border border-card-border rounded-md p-6 flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <Mail className="h-5 w-5 text-muted-foreground" />
+                  <span className="font-mono" data-testid="text-email">{email}</span>
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={copyEmail}
+                  data-testid="button-copy-email"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="h-4 w-4 mr-2" />
+                      Copied
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="h-4 w-4 mr-2" />
+                      Copy
+                    </>
+                  )}
+                </Button>
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={copyEmail}
-                data-testid="button-copy-email"
-              >
-                {copied ? (
-                  <>
-                    <Check className="h-4 w-4 mr-2" />
-                    Copied
-                  </>
-                ) : (
-                  <>
-                    <Copy className="h-4 w-4 mr-2" />
-                    Copy
-                  </>
-                )}
-              </Button>
+              
+              <div className="bg-card border border-card-border rounded-md p-6">
+                <div className="flex items-center gap-3">
+                  <span className="text-muted-foreground">📱</span>
+                  <span className="font-mono" data-testid="text-phone">{phone}</span>
+                </div>
+              </div>
             </div>
 
             <div className="flex justify-center gap-4">
@@ -98,7 +108,7 @@ export function Contact() {
 
           <div className="pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Your Name. Built with React & Tailwind CSS.
+              © {new Date().getFullYear()} Enioluwa Adebisi. Built with React & Tailwind CSS.
             </p>
           </div>
         </div>

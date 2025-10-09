@@ -1,6 +1,7 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import profileImage from "@assets/2025-03-11 12-42-28_1760033110328.jpeg";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -18,26 +19,26 @@ export function Hero() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Your Name
+                  Enioluwa Adebisi
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Full Stack Developer crafting elegant solutions to complex problems
+                Computer Science Graduate building full-stack solutions and scalable systems
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-react">
-                React
-              </Badge>
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-typescript">
-                TypeScript
-              </Badge>
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-nodejs">
-                Node.js
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-javascript">
+                JavaScript
               </Badge>
               <Badge variant="secondary" className="text-sm" data-testid="badge-skill-python">
                 Python
+              </Badge>
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-sveltekit">
+                SvelteKit
+              </Badge>
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-sql">
+                SQL
               </Badge>
             </div>
 
@@ -73,12 +74,12 @@ export function Hero() {
             <div className="relative w-full max-w-md aspect-square">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl" />
               <div className="relative w-full h-full rounded-2xl bg-card border border-card-border flex items-center justify-center overflow-hidden">
-                <div className="text-center space-y-4 p-8">
-                  <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-6xl font-bold text-primary-foreground">
-                    YN
-                  </div>
-                  <p className="text-muted-foreground">Professional Headshot</p>
-                </div>
+                <img 
+                  src={profileImage} 
+                  alt="Enioluwa Adebisi" 
+                  className="w-full h-full object-cover"
+                  data-testid="img-profile"
+                />
               </div>
             </div>
           </div>

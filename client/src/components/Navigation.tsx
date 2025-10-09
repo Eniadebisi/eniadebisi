@@ -45,7 +45,7 @@ export function Navigation() {
               className="text-xl font-bold hover-elevate px-2 py-1 rounded-md transition-colors"
               data-testid="button-logo"
             >
-              YN
+              EA
             </button>
 
             <nav className="hidden md:flex items-center gap-8">

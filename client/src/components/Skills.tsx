@@ -11,32 +11,32 @@ export function Skills() {
     {
       category: "Languages",
       icon: <Code2 className="h-6 w-6" />,
-      items: ["JavaScript", "TypeScript", "Python", "Java"],
+      items: ["JavaScript", "Python", "HTML/CSS", "SQL"],
     },
     {
       category: "Frontend",
       icon: <Globe className="h-6 w-6" />,
-      items: ["React", "Next.js", "Vue", "Tailwind CSS"],
+      items: ["SvelteKit", "React", "Responsive Design", "UI/UX"],
     },
     {
-      category: "Backend",
-      icon: <Server className="h-6 w-6" />,
-      items: ["Node.js", "Express", "Django", "FastAPI"],
-    },
-    {
-      category: "Database",
+      category: "Backend & Database",
       icon: <Database className="h-6 w-6" />,
-      items: ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
+      items: ["Prisma", "MariaDB", "PostgreSQL", "REST API"],
     },
     {
-      category: "Tools",
+      category: "Cloud & DevOps",
+      icon: <Server className="h-6 w-6" />,
+      items: ["AWS", "Firebase", "Git", "Linux"],
+    },
+    {
+      category: "Tools & Platforms",
       icon: <Wrench className="h-6 w-6" />,
-      items: ["Git", "Docker", "AWS", "CI/CD"],
+      items: ["Visual Studio", "Jira", "Confluence", "Google Apps Script"],
     },
     {
-      category: "Design",
+      category: "Specialized",
       icon: <Palette className="h-6 w-6" />,
-      items: ["Figma", "UI/UX", "Responsive", "Accessibility"],
+      items: ["Agentic AI", "Generative AI", "WordPress", "Elementor"],
     },
   ];
 
