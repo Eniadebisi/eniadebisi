@@ -1,7 +1,9 @@
+'use client';
+
+import { useState } from "react";
 import { Mail, Linkedin, Github, Copy, Check } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Button } from "./ui/button";
-import { useState } from "react";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);

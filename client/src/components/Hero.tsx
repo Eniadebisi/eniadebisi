@@ -3,6 +3,7 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import Image from "next/image";
 import profileImage from "@assets/2025-03-11 12-42-28_1760033110328.jpeg";
 
 export function Hero() {
@@ -76,11 +77,13 @@ export function Hero() {
             <div className="relative w-full max-w-md aspect-square">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl" />
               <div className="relative w-full h-full rounded-2xl bg-card border border-card-border flex items-center justify-center overflow-hidden">
-                <img 
+                <Image 
                   src={profileImage} 
                   alt="Enioluwa Adebisi" 
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                   data-testid="img-profile"
+                  priority
                 />
               </div>
             </div>
