@@ -1,7 +1,7 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import profileImage from "@assets/2025-03-11 12-42-28_1760033110328.jpeg";
+import profileImage from "@assets/ProfilePic.jpeg";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
