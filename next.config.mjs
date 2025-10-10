@@ -13,7 +13,7 @@ const nextConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, './client/src'),
-      '@assets': path.resolve(__dirname, './attached_assets'),
+      '@assets': path.resolve(__dirname, './client/src/lib'),
     };
     return config;
   },
