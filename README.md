@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+🌱 I’m currently learning AWS Solutions Architect Associate (SAA-03) and am on track to grow my skills as a Cloud Engineer. Thanks to @acantril
+
 <!--
 **Eniadebisi/eniadebisi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
