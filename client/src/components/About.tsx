@@ -1,5 +1,6 @@
 export function About() {
   const milestones = [
+    { year: "2026–Present", title: "DevOps Engineer (Contract)", company: "JSSI" },
     { year: "2022-2025", title: "Front End Web Dev & Networking", company: "HWPL Nonprofit" },
     { year: "2016-2020", title: "AV Tech & Networking", company: "New Wine Assembly" },
   ];
@@ -21,14 +22,14 @@ export function About() {
         <div className="grid md:grid-cols-5 gap-12">
           <div className="md:col-span-3 space-y-6">
             <p className="text-lg text-foreground">
-              I'm a recent Computer Science graduate from Georgia Institute of Technology (May 2025) with hands-on 
-              experience in software development and full-stack web applications. I specialize in building scalable, 
-              user-friendly systems using modern frameworks and cloud technologies.
+              I'm a Computer Science graduate from Georgia Institute of Technology (May 2025) working in cloud platform
+              engineering on Azure. I design landing zones, networking, and observability, and I codify it all as
+              infrastructure so application teams can ship on secure, consistent foundations.
             </p>
             <p className="text-lg text-muted-foreground">
-              My expertise spans JavaScript, Python, SQL databases, and frameworks like SvelteKit and Firebase. 
-              I'm passionate about solving real-world problems through technology, with experience leading development 
-              teams and optimizing systems for performance and security.
+              My background in software development with JavaScript, Python, and SQL shapes how I automate infrastructure,
+              and years of hands-on networking work, now backed by CompTIA Network+ and Microsoft Azure Fundamentals,
+              ground my approach to cloud architecture.
             </p>
 
             <div className="space-y-4 pt-4">

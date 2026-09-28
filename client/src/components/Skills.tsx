@@ -1,4 +1,4 @@
-import { Code2, Database, Globe, Palette, Server, Wrench } from "lucide-react";
+import { Activity, Cloud, Code2, GitBranch, Network, Sparkles } from "lucide-react";
 
 type Skill = {
   category: string;
@@ -9,34 +9,34 @@ type Skill = {
 export function Skills() {
   const skills: Skill[] = [
     {
-      category: "Languages",
+      category: "Cloud",
+      icon: <Cloud className="h-6 w-6" />,
+      items: ["Azure", "Landing Zones", "Well-Architected Framework", "Entra ID", "Azure Functions", "AKS"],
+    },
+    {
+      category: "Networking",
+      icon: <Network className="h-6 w-6" />,
+      items: ["Hub-Spoke", "VNet Peering", "Private Endpoints", "DNS", "TCP/IP", "Subnetting"],
+    },
+    {
+      category: "IaC & CI/CD",
+      icon: <GitBranch className="h-6 w-6" />,
+      items: ["Terraform", "Azure DevOps", "PowerShell", "Azure CLI", "Git"],
+    },
+    {
+      category: "Observability",
+      icon: <Activity className="h-6 w-6" />,
+      items: ["Azure Monitor", "Log Analytics", "Alerting Standards"],
+    },
+    {
+      category: "AI & Automation",
+      icon: <Sparkles className="h-6 w-6" />,
+      items: ["Claude", "MCP", "Agentic AI", "Generative AI"],
+    },
+    {
+      category: "Development",
       icon: <Code2 className="h-6 w-6" />,
-      items: ["JavaScript", "Python", "HTML/CSS", "SQL"],
-    },
-    {
-      category: "Frontend",
-      icon: <Globe className="h-6 w-6" />,
-      items: ["SvelteKit", "React", "Responsive Design", "UI/UX"],
-    },
-    {
-      category: "Backend & Database",
-      icon: <Database className="h-6 w-6" />,
-      items: ["Prisma", "MariaDB", "PostgreSQL", "REST API"],
-    },
-    {
-      category: "Cloud & DevOps",
-      icon: <Server className="h-6 w-6" />,
-      items: ["AWS", "Firebase", "Git", "Linux"],
-    },
-    {
-      category: "Tools & Platforms",
-      icon: <Wrench className="h-6 w-6" />,
-      items: ["Visual Studio", "Jira", "Confluence", "Google Apps Script"],
-    },
-    {
-      category: "Specialized",
-      icon: <Palette className="h-6 w-6" />,
-      items: ["Agentic AI", "Generative AI", "WordPress", "Elementor"],
+      items: ["JavaScript", "Python", "SQL", "React", "SvelteKit", "PostgreSQL"],
     },
   ];
 
@@ -49,7 +49,7 @@ export function Skills() {
               Skills & Expertise
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl">
-              A comprehensive toolkit built over years of hands-on experience and continuous learning.
+              A cloud-first toolkit spanning Azure architecture, networking, infrastructure as code, and automation.
             </p>
           </div>
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, FolderOpen } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
@@ -26,39 +26,40 @@ export function Hero() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Computer Science Graduate building full-stack solutions and scalable systems
+                Cloud & DevOps Engineer building secure, standardized Azure platforms with Terraform and automation
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-javascript">
-                JavaScript
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-azure">
+                Azure
               </Badge>
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-python">
-                Python
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-terraform">
+                Terraform
               </Badge>
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-sveltekit">
-                SvelteKit
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-azure-devops">
+                Azure DevOps
               </Badge>
-              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-sql">
-                SQL
+              <Badge variant="secondary" className="text-sm" data-testid="badge-skill-aks">
+                AKS
               </Badge>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
+                onClick={() => scrollToSection("experience")}
+                data-testid="button-view-experience"
+              >
+                View Experience <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
                 onClick={() => scrollToSection("projects")}
                 data-testid="button-view-projects"
               >
-                View Projects <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                data-testid="button-download-resume"
-              >
-                <Download className="mr-2 h-5 w-5" /> Download Resume
+                <FolderOpen className="mr-2 h-5 w-5" /> View Projects
               </Button>
             </div>
 
@@ -67,7 +68,7 @@ export function Hero() {
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
                 <span className="text-sm font-medium" data-testid="text-availability">
-                  Open to opportunities
+                  DevOps Engineer @ JSSI
                 </span>
               </div>
             </div>

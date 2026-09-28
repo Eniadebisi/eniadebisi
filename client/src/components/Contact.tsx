@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Linkedin, Github, Copy, Check } from "lucide-react";
+import { Mail, Copy, Check } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Button } from "./ui/button";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
   const email = "eniadebisi@gmail.com";
-  const phone = "(202) 751-6267";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -65,15 +64,6 @@ export function Contact() {
                   )}
                 </Button>
               </div>
-
-              <div className="bg-card border border-card-border rounded-md p-6">
-                <div className="flex items-center gap-3">
-                  <span className="text-muted-foreground">📱</span>
-                  <span className="font-mono" data-testid="text-phone">
-                    {phone}
-                  </span>
-                </div>
-              </div>
             </div>
 
             <div className="flex justify-center gap-4">
@@ -86,16 +76,10 @@ export function Contact() {
                 </Button>
               ))}
             </div>
-
-            <div className="pt-8">
-              <Button size="lg" data-testid="button-download-resume-footer">
-                Download Resume
-              </Button>
-            </div>
           </div>
 
           <div className="pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Enioluwa Adebisi. Built with React & Tailwind CSS.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Enioluwa Adebisi. Built with Next.js & Tailwind CSS.</p>
           </div>
         </div>
       </div>

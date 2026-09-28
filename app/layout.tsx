@@ -16,8 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Enioluwa Adebisi - Full Stack Developer | Georgia Tech CS Graduate",
-  description: "Computer Science graduate from Georgia Tech specializing in full-stack development with JavaScript, Python, SvelteKit, and cloud technologies. View my portfolio and projects.",
+  title: "Enioluwa Adebisi - Cloud & DevOps Engineer | Azure, Terraform",
+  description: "Cloud & DevOps Engineer building Azure landing zones, Terraform modules, Azure DevOps pipelines, and observability at scale. Microsoft Azure Fundamentals (AZ-900) and CompTIA Network+ certified. Georgia Tech CS graduate.",
 };
 
 export default function RootLayout({
