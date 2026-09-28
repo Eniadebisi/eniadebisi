@@ -1,13 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Copy, Check } from "lucide-react";
+import { Mail, Phone, Copy, Check } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Button } from "./ui/button";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
   const email = "eniadebisi@gmail.com";
+  const phone = "(678) 774-9646";
+  const phoneHref = "tel:+16787749646";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -63,6 +65,15 @@ export function Contact() {
                     </>
                   )}
                 </Button>
+              </div>
+
+              <div className="bg-card border border-card-border rounded-md p-6">
+                <a href={phoneHref} className="flex items-center gap-3 hover:text-primary transition-colors">
+                  <Phone className="h-5 w-5 text-muted-foreground" />
+                  <span className="font-mono" data-testid="text-phone">
+                    {phone}
+                  </span>
+                </a>
               </div>
             </div>
 
